@@ -1,0 +1,119 @@
+#navbar{
+    position:relative;
+    color: white;
+    background-color:#0046be;
+   
+    -webkit-font-smoothing: antialiased;
+   
+    font-family:sans-serif;
+    font-size: 13px;
+    height: 20vh;
+    margin: -10px;
+   
+    
+}
+#one{
+    width: 3.5rem;
+}
+#first{
+    display: grid;
+    grid-template-columns:75% 40%;
+    height: 2em;
+    gap: 10%;
+    padding-bottom: 2%;
+}
+
+#a{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+  
+    margin-left: 20px;
+    align-items: center;
+    
+}
+#a>div{
+    margin-left: -40%;
+}
+#a>input{
+    margin-left: -70%;
+    position:relative;
+}
+
+#b{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    align-items: center;
+    display: grid;
+    align-items: center;
+    /* margin-left: 1rem; */
+    width: 40%;
+    
+}
+#c{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    align-items: center;
+    
+}
+#c>div{
+    margin-left:-30% ;
+}
+
+#cart_logo{
+    width: 1.5em;
+}
+#second{
+    display: grid;
+    grid-template-columns:70% 29%;
+    gap: 5%;
+    height: 2em;
+    margin-top: 1em;
+    font-size: 7px;
+
+}
+
+#acc{
+    width: 1em;
+}
+#d{
+    display: grid;
+    grid-template-columns: repeat(8,1fr);
+    margin-left: 1.5rem;
+
+}
+#e{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    margin-right: 1rem;
+    margin-left: -20%;
+    
+}
+#f{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+}
+#f>div{
+    margin-left: -70%;
+}
+hr{
+    position:relative;
+    color: aliceblue;
+    margin-top: 1em;
+    size: 0.5em;
+    
+}
+#store{
+    width: 1.5em;
+}
+#g{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    align-items: center;
+}
+#g>div{
+    margin-left:-20% ;
+}
+#micro{
+position:absolute ;
+left: 55%;
+}
