@@ -1,0 +1,193 @@
+body {
+  margin: 0%;
+  display: flex;
+  justify-content: center;
+  font-family: sans-serif;
+}
+#bb {
+  width: 99rem;
+}
+#top {
+  margin-top: 50px;
+  height: auto;
+  background-color: rgb(70, 70, 218);
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  padding-bottom: 20px;
+}
+#top > div {
+  color: white;
+  padding-left: 150px;
+  padding-top: 25px;
+}
+#deal {
+  border: 0px;
+  background-color: red;
+  color: white;
+  font-size: 30px;
+  height: 40px;
+  margin-right: 5px;
+}
+#top > div > div {
+  display: flex;
+  margin-bottom: 0px;
+}
+#time {
+  background-color: white;
+  color: black;
+  width: 250px;
+  height: 50px;
+}
+#mid {
+  height: auto;
+  display: flex;
+}
+#mid > div > img {
+  width: 200px;
+  height: 250px;
+  padding-left: 200px;
+  padding-top: 80px;
+  padding-bottom: 40px;
+}
+#mid > div + div {
+  margin-left: 250px;
+  padding-top: 50px;
+  width: 800px;
+}
+p {
+  margin: 3px;
+  padding: 5px;
+}
+h1 {
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+hr {
+  margin-top: 20px;
+}
+#products {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  /* gap: 30px; */
+  /* text-align: center; */
+}
+#products > div > img {
+  width: 200px;
+  height: 200px;
+}
+#products > div {
+  /* border: 0.1px solid black; */
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  padding-left: 50px;
+  margin: 30px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+#products > div > button {
+  margin-top: 10px;
+  background-color: rgb(255, 197, 72);
+  color: black;
+  border: 0px;
+  padding: 9px;
+  border-radius: 5px;
+  margin-top: 30px;
+}
+#products > div > h4 {
+  background-color: brown;
+  color: white;
+}
+#dilivery {
+  margin: auto;
+  margin-left: 100px;
+}
+#bhig {
+  display: flex;
+}
+#bhig > div {
+  padding: 40px;
+  width: 400px;
+  margin-left: 100px;
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
+    rgba(0, 04, 0, 0.15) 0px 1px 3px 1px;
+}
+#bhig > div > input {
+  display: block;
+}
+
+#bhig > div > button {
+  background-color: blue;
+  color: white;
+  border: 0px;
+  padding: 15px;
+  border-radius: 10px;
+  margin-top: 30px;
+}
+
+#bim {
+  margin-top: 30px;
+  height: 300px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+#bim > div {
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px,
+    rgba(0, 0, 0, 0.22) 0px 10px 10px;
+  height: auto;
+  margin: auto;
+  padding: 30px;
+  display: flex;
+}
+#bim > div > img {
+  width: 90px;
+  height: 90px;
+}
+#emt {
+  height: auto;
+  display: flex;
+}
+#emt > div {
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+#bottom {
+  margin: 30px;
+  margin-bottom: 100px;
+}
+#bottom > div {
+  border: 1px solid black;
+  padding: 10px;
+}
+
+#topdeals {
+  display: flex;
+
+  display: flex;
+  height: auto;
+  gap: 40px;
+  margin-left: 50px;
+  padding: 20px;
+  overflow-x: scroll;
+  padding-left: 30px;
+}
+#topdeals::-webkit-scrollbar{
+  height: 10px;
+}
+#topdeals::-webkit-scrollbar-thumb{
+  background-color:grey
+}
+#topdeals > div {
+  padding: 10px;
+  overflow: visible;
+  height: auto;
+
+}
+
+#topdeals div:hover {
+  border: 2px solid blue;
+}
+
+#topdeal1 {
+  width: 90rem;
+}
