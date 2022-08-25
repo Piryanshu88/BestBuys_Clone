@@ -96,14 +96,26 @@ input::placeholder {
   justify-content: right;
 }
 
-.hiding {
+.forgot {
+  color: var(--main-color);
+  font-size: 14px;
+  margin-bottom: 5px;
+}
+
+.forgot:hover {
+  color: black;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+#hiding {
   display: none;
 }
 
 .password-img {
   width: 20px;
   cursor: pointer;
-  margin-left: 10px;
+  margin-right: 10px;
 }
 
 #create-account {
@@ -122,7 +134,9 @@ input::placeholder {
   background-color: #002b75;
 }
 
-#with-google {
+#with-google,
+#with-authn,
+#with-apple {
   width: 100%;
   padding: 15px;
   font-size: 15px;
@@ -136,15 +150,40 @@ input::placeholder {
   align-items: center;
 }
 
-#with-google:hover {
+#with-authn {
+  margin-bottom: 15px;
+}
+
+#with-apple {
+  margin-bottom: 15px;
+  border: 1px solid black;
+}
+
+#with-google:hover,
+#with-authn:hover,
+#with-apple:hover {
   cursor: pointer;
   background-color: #002b75;
   color: white;
 }
 
-#google-img {
+#with-apple:hover {
+  background-color: black;
+}
+
+#google-img,
+#apple-img,
+#authn-img {
   width: 15px;
   margin-right: 10px;
+}
+
+#authn-img {
+  width: 17px;
+}
+
+#apple-img {
+  width: 23px;
 }
 
 #or {
