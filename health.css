@@ -1,0 +1,311 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+:root {
+  --main-color: #0046be;
+}
+
+.top-1-sec,
+.top-3-sec,
+.thumbnail-sec,
+.detail-1-sec,
+.detail-2-sec,
+.detail-3-sec,
+.detail-4-sec {
+  width: 73%;
+  margin: auto;
+}
+
+/* ///////////////// top 1 sec //////////// */
+
+.top-1-sec {
+  padding: 10px 0px;
+}
+
+.top-1-sec > p > span {
+  font-size: small;
+  color: var(--main-color);
+  cursor: pointer;
+  margin-right: 5px;
+}
+
+.top-1-sec > p > span:hover {
+  color: black;
+  text-decoration: underline;
+}
+
+.top-1-sec > p > img {
+  width: 10px;
+  height: 10px;
+  margin-right: 5px;
+}
+
+.top-1-sec > p {
+  margin-bottom: 20px;
+}
+
+/* //////////////// top 2 sec ////////////// */
+
+.top-2-sec {
+  text-align: center;
+  padding: 30px 0px;
+  background: linear-gradient(rgb(210, 210, 235), rgb(243, 243, 255) 50%);
+}
+
+.top-2-sec > h1 {
+  margin-bottom: 10px;
+  font-weight: 1000;
+}
+
+.round-img-sec {
+  display: flex;
+  justify-content: space-between;
+  width: 75%;
+  margin: auto;
+  padding: 40px 0px 60px 0px;
+}
+
+.round-card {
+  width: 15.5%;
+}
+
+.round-card > div {
+  width: 100%;
+  border-radius: 50%;
+  background-color: white;
+  border: 3px solid lavender;
+}
+
+.round-card > div > img {
+  width: 100%;
+  padding: 25px;
+  cursor: pointer;
+}
+
+.round-card > p {
+  color: var(--main-color);
+  font-weight: bolder;
+  font-size: small;
+  margin-top: 10px;
+  cursor: pointer;
+}
+
+.round-card > p:hover {
+  color: black;
+  text-decoration: underline;
+}
+
+/* ///////////// top 3 sec //////////// */
+/* ////////////// top-3-first ///////////// */
+
+.top-3-first {
+  display: flex;
+  justify-content: space-between;
+  padding: 40px;
+}
+
+.top-3-first > div:nth-child(1) {
+  width: 35%;
+  display: flex;
+  justify-content: right;
+  align-items: center;
+}
+
+.top-3-first > div > img {
+  width: 120px;
+}
+
+.top-3-first > div:nth-child(2) {
+  width: 60%;
+}
+
+.top-3-first > div > h3 {
+  margin-bottom: 10px;
+  color: var(--main-color);
+  cursor: pointer;
+  font-weight: 1000;
+}
+
+.top-3-first > div > h3:hover {
+  color: black;
+  text-decoration: underline;
+}
+
+/* //////////// top-3-second ///////////// */
+
+.top-3-second {
+  display: flex;
+  justify-content: space-between;
+  background-color: var(--main-color);
+  padding: 15px 12%;
+}
+
+.top-3-second > div:nth-child(1) {
+  width: 20%;
+}
+
+.top-3-second > div > img {
+  width: 100%;
+}
+
+.top-3-second > div:nth-child(2) {
+  width: 45%;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.top-3-second > div:nth-child(3) {
+  width: 25%;
+  display: flex;
+  justify-content: right;
+  align-items: center;
+}
+
+.top-3-second > div > button {
+  padding: 5px 8px;
+  border: 1px solid white;
+  border-radius: 3px;
+  color: var(--main-color);
+  font-weight: bold;
+  background-color: white;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.top-3-second > div > button:hover {
+  cursor: pointer;
+  background-color: var(--main-color);
+  color: white;
+}
+
+/* ////////////// top-3-third /////////////// */
+
+.top-3-third {
+  display: flex;
+  justify-content: space-between;
+  padding: 40px 0px;
+}
+
+.top-3-third > div {
+  display: flex;
+  justify-content: space-between;
+  width: 48%;
+}
+
+.top-3-third > div > img {
+  width: 45%;
+  cursor: pointer;
+}
+
+.top-3-third > div > div {
+  width: 45%;
+  line-height: 1.2em;
+}
+
+.top-3-third > div > div > p:nth-child(1) {
+  color: var(--main-color);
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.top-3-third > div > div > p:hover {
+  color: black;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.top-3-third > div > div > p:nth-child(2) {
+  font-size: 14px;
+}
+
+/* /////////// thumbnail-sec /////////////// */
+
+.thumbnail-sec {
+  padding-bottom: 40px;
+}
+
+.thumbnail-sec h1 {
+  font-weight: 1000;
+  text-align: center;
+}
+
+.thumbnail-sec hr {
+  margin-bottom: 40px;
+}
+
+.thumbnail-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px 30px;
+}
+
+.thumbnail-container > div > img {
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.thumbnail-container > div > h3 {
+  margin-bottom: 10px;
+  color: var(--main-color);
+}
+
+.thumbnail-container > div > h3:hover {
+  color: black;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.thumbnail-container > div > p {
+  font-size: 14px;
+}
+
+/* ///////////////// detail-1-sec ///////////////// */
+
+.detail-1-sec {
+  display: flex;
+  justify-content: space-between;
+  padding: 30px 6%;
+  background-color: rgb(237, 237, 255);
+}
+
+.detail-1-sec > div:nth-child(1) {
+  width: 30%;
+}
+
+.detail-1-sec > div:nth-child(2) {
+  width: 70%;
+  line-height: 1.3em;
+}
+
+.detail-1-sec > div > img {
+  width: 150px;
+}
+
+.detail-1-sec > div > h3 {
+  font-weight: 1000;
+}
+
+.detail-1-sec > div > button {
+  color: white;
+  background-color: var(--main-color);
+  border: none;
+  padding: 8px 25px;
+  margin-top: 10px;
+  border-radius: 5px;
+  font-weight: 1000;
+}
+
+.detail-1-sec > div > button:hover {
+  background-color: #002e7d;
+  cursor: pointer;
+}
+
+/* ///////////////// detail-2-sec ///////////////// */
+
+/* ///////////////// detail-3-sec ///////////////// */
+/* ///////////////// detail-4-sec ///////////////// */
