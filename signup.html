@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Create Account</title>
+    <title>Create a New Account</title>
     <link rel="stylesheet" href="signup.css" />
   </head>
   <body>
@@ -33,13 +33,21 @@
         name=""
         id="first-name"
         placeholder="First Name"
+        required
       /><br />
-      <input type="text" name="" id="last-name" placeholder="Last Name" /><br />
+      <input
+        type="text"
+        name=""
+        id="last-name"
+        placeholder="Last Name"
+        required
+      /><br />
       <input
         type="email"
         name=""
         id="email"
         placeholder="Email Address"
+        required
       /><br />
       <div class="show-password">
         <label for="">Show Passwords</label>
@@ -53,7 +61,6 @@
           alt="hide password"
           class="password-img hide-img hiding"
         />
-        
       </div>
 
       <input
@@ -61,22 +68,28 @@
         name=""
         id="password"
         placeholder="Password (ex. 'Nine+twelve=21')"
+        required
       /><br />
+      <p class="valid">Use Alphabet & Icon</p>
       <input
         type="password"
         name=""
         id="confirm-password"
         placeholder="Confirm Password"
+        required
       /><br />
+      <p class="confirm">Password does not Match</p>
       <input
         type="number"
         name=""
         id="mobile-number"
         placeholder="Mobile Phone Number"
+        required
       /><br />
       <div id="checkbox">
         <label for="check">
-          <input type="checkbox" name="check" />Use for Account Recovery.
+          <input type="checkbox" name="check" required />Use for Account
+          Recovery.
         </label>
         <img
           src="https://cdn0.iconfinder.com/data/icons/ui-essence/32/_97ui-128.png"

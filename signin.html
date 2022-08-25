@@ -35,28 +35,25 @@
         placeholder="Email Address"
       /><br />
       <div class="show-password">
+        <label for="">Show Passwords</label>
         <img
           src="https://cdn4.iconfinder.com/data/icons/interface-line-14/32/hide-128.png"
           alt="show password"
-          class="password-img"
+          class="password-img show-img"
         />
-        <label for="">Show Passwords</label>
-      </div>
-
-      <div class="show-password" id="hiding">
         <img
           src="https://cdn4.iconfinder.com/data/icons/interface-line-14/32/unhide-128.png"
           alt="hide password"
-          class="password-img"
+          class="password-img hide-img hiding"
         />
-        <label for="">Hide Passwords</label>
       </div>
       <input
         type="password"
         name=""
         id="password"
-        placeholder="Password (ex. 'Nine+twelve=21')"
+        placeholder="Password"
       /><br />
+      <p class="wrong-password">Wrong Email ID or Password</p>
       <p class="forgot">Forgot your password?</p>
 
       <button type="submit" id="create-account">Sign In</button>

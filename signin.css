@@ -96,6 +96,21 @@ input::placeholder {
   justify-content: right;
 }
 
+.hiding {
+  display: none;
+}
+
+.password-img {
+  width: 20px;
+  cursor: pointer;
+  margin-left: 10px;
+}
+
+.wrong-password {
+  color: red;
+  display: none;
+}
+
 .forgot {
   color: var(--main-color);
   font-size: 14px;
