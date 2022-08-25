@@ -522,7 +522,6 @@ function AppendtrendingProducts(data){
     data.forEach((ele)=>{
         let div=document.createElement('div')
         div.style.backgroundColor="white"
-        div.style.width="18%"
         //div.style.border='1px solid'
         div.style.paddingLeft='10px'
         div.style.lineHeight='30px'

@@ -190,3 +190,36 @@
 .info-2,.info-5{
     margin-left: 15px;
 }
+
+@media all and (min-width:481px) and (max-width:800px){
+#category{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+}
+#applepro{
+    grid-template-columns: repeat(3,1fr);
+}
+#service h2{
+    font-size: 20px;
+}
+#service p{
+    font-size:14px ;
+}
+}
+
+@media all and (min-width:320px) and (max-width:480px){
+    
+    #category{
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+    }
+    #applepro{
+        grid-template-columns: repeat(2,1fr);
+    }
+    #service h2{
+        font-size: 18px;
+    }
+    #service p{
+        font-size:12px ;
+    }
+}
