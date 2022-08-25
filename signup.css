@@ -106,6 +106,16 @@ input::placeholder {
   margin-left: 10px;
 }
 
+.valid {
+  color: red;
+  display: none;
+}
+
+.confirm {
+  color: red;
+  display: none;
+}
+
 #create-account {
   width: 100%;
   padding: 15px;
