@@ -307,5 +307,124 @@
 
 /* ///////////////// detail-2-sec ///////////////// */
 
+.detail-2-sec {
+  padding: 30px 0px;
+}
+
+.para-card-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 40px 30px;
+}
+
+.para-card-container > div {
+  border: 1px solid rgb(203, 203, 210);
+  display: flex;
+  padding: 20px;
+}
+
+.para-card-container > div > div {
+  width: 50%;
+}
+
+.para-card-container > div > div > img {
+  width: 80%;
+}
+
+.para-card-container > div > div > h3 {
+  color: var(--main-color);
+  margin-bottom: 10px;
+  line-height: 1.2em;
+}
+
+.para-card-container > div > div > h3:hover {
+  color: black;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.para-card-container > div > div > p {
+  font-size: 14px;
+  line-height: 1.2em;
+}
+
+.para-card-container > div > div > p > span {
+  font-size: smaller;
+  color: gray;
+}
+
 /* ///////////////// detail-3-sec ///////////////// */
+
+.detail-3-sec > div {
+  display: flex;
+  justify-content: space-between;
+  border: 1px solid rgb(196, 196, 216);
+  padding: 20px 15px 40px 15px;
+}
+
+.detail-3-sec > h3 {
+  border-top: 1px solid rgb(196, 196, 216);
+  border-left: 1px solid rgb(196, 196, 216);
+  border-right: 1px solid rgb(196, 196, 216);
+  padding: 20px 15px;
+}
+
+.detail-3-sec > div > div {
+  width: 48%;
+}
+
+.detail-3-sec > div > div > h4 {
+  margin-bottom: 10px;
+}
+
+.detail-3-sec > div > div > p {
+  font-size: 14px;
+  line-height: 1.2em;
+}
+
+.detail-3-sec > div > div > p > span {
+  color: var(--main-color);
+  text-decoration: underline;
+}
+
+.detail-3-sec > div > div > p > span:hover {
+  color: black;
+  cursor: pointer;
+}
+
 /* ///////////////// detail-4-sec ///////////////// */
+
+.detail-4-sec {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 50px;
+  margin-bottom: 100px;
+  padding: 0px 20px;
+}
+
+.detail-4-sec > div {
+  width: 31%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.detail-4-sec > div > img {
+  width: 80px;
+  margin-right: 10px;
+}
+
+.detail-4-sec > div > div {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+}
+
+.detail-4-sec > div > div > div > h3 {
+  color: rgb(82, 82, 82);
+  margin-bottom: 5px;
+}
+
+.detail-4-sec > div > div > div > p {
+  font-size: 13px;
+  color: rgb(82, 82, 82);
+}
