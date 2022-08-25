@@ -1,0 +1,133 @@
+body {
+  display: flex;
+  background-color: #f4f2f4;
+  font-family: sans-serif;
+}
+#bb {
+  /* border: 1px solid red; */
+  width: 120rem;
+  display: flex;
+  margin: auto;
+}
+#bbb {
+  /* border: 1px solid red; */
+  width: 1300px;
+  display: flex;
+  margin: auto;
+}
+
+#bb1 {
+  width: 80%;
+  height: 1000px;
+  padding: 20px;
+  /* padding-left: 60px; */
+  /* overflow: auto;
+  scrollbar-color: #f4f2f4; */
+}
+#bb2 {
+  /* margin-left: 50px; */
+  /* margin-right: 100px; */
+  width: 400px;
+  text-align: center;
+  background-color: white;
+  text-align: left;
+  padding: 30px;
+}
+#cs {
+  background-color: #0046be;
+  color: white;
+  border: 0px;
+  width: 300px;
+  border-radius: 5px;
+}
+
+#savesitems {
+  margin-bottom: 100px;
+  box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px,
+    rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+  padding: 30px;
+  background-color: white;
+}
+#bb2 > div {
+  padding-bottom: 20px;
+}
+#frequentitme {
+  /* height: 300px; */
+  box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px,
+    rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+  background-color: white;
+}
+
+::-webkit-scrollbar {
+  width: 0px;
+}
+
+#working-div {
+  width: 860px;
+  margin-bottom: 100px;
+  padding: 30px;
+  box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px,
+    rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+  background-color: white;
+}
+#working-div > div {
+  display: flex;
+}
+#working-div > div > img {
+  width: 100px;
+  height: 70px;
+}
+
+#working-div > div > select {
+  width: 200px;
+  height: 40px;
+  margin-top: 10px;
+}
+#working-div > div > p {
+  width: 300px;
+}
+
+.div2 {
+  margin-left: 10px;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+}
+.div2 > p {
+  color: rgb(38, 38, 234);
+  cursor: pointer;
+}
+.div2 > p:hover {
+  text-decoration: underline;
+}
+.pri {
+  margin-left: 20px;
+}
+
+.div2 {
+  /* border: 1px solid red; */
+  height: 50px;
+  margin-top: 10px;
+}
+
+#divi {
+  /* border: 1px solid red; */
+  height: 100px;
+  display: flex;
+  margin-bottom: 30px;
+}
+#st {
+  /* border: 1px solid red; */
+  height: 100px;
+  width: 40%;
+  margin-left: 20px;
+}
+#nd {
+  /* width: 50%; */
+  /* border: 1px solid red; */
+  height: 100px;
+  padding: 5px;
+}
+#st > img {
+  width: 100px;
+}
