@@ -4,8 +4,8 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Create Account</title>
-    <link rel="stylesheet" href="signup.css" />
+    <title>Sign In to Best Buy</title>
+    <link rel="stylesheet" href="signin.css" />
   </head>
   <body>
     <!-- //////// nav sec //////////// -->
@@ -26,15 +26,8 @@
 
     <!-- /////////// signup sec ////////////// -->
     <form class="container">
-      <h3>Create an Account</h3>
-      <p>Shopping for your business? <span>Create a business account</span>.</p>
-      <input
-        type="text"
-        name=""
-        id="first-name"
-        placeholder="First Name"
-      /><br />
-      <input type="text" name="" id="last-name" placeholder="Last Name" /><br />
+      <h3>Sign In to Best Buy</h3>
+
       <input
         type="email"
         name=""
@@ -42,59 +35,61 @@
         placeholder="Email Address"
       /><br />
       <div class="show-password">
-        <label for="">Show Passwords</label>
         <img
           src="https://cdn4.iconfinder.com/data/icons/interface-line-14/32/hide-128.png"
           alt="show password"
-          class="password-img show-img"
+          class="password-img"
         />
+        <label for="">Show Passwords</label>
+      </div>
+
+      <div class="show-password" id="hiding">
         <img
           src="https://cdn4.iconfinder.com/data/icons/interface-line-14/32/unhide-128.png"
           alt="hide password"
-          class="password-img hide-img hiding"
+          class="password-img"
         />
-        
+        <label for="">Hide Passwords</label>
       </div>
-
       <input
         type="password"
         name=""
         id="password"
         placeholder="Password (ex. 'Nine+twelve=21')"
       /><br />
-      <input
-        type="password"
-        name=""
-        id="confirm-password"
-        placeholder="Confirm Password"
-      /><br />
-      <input
-        type="number"
-        name=""
-        id="mobile-number"
-        placeholder="Mobile Phone Number"
-      /><br />
-      <div id="checkbox">
-        <label for="check">
-          <input type="checkbox" name="check" />Use for Account Recovery.
-        </label>
-        <img
-          src="https://cdn0.iconfinder.com/data/icons/ui-essence/32/_97ui-128.png"
-          alt="information image"
-          id="info-img"
-        />
-      </div>
+      <p class="forgot">Forgot your password?</p>
 
-      <button type="submit" id="create-account">Create an Account</button>
+      <button type="submit" id="create-account">Sign In</button>
       <p id="or"><span>or</span></p>
+
+      <button id="with-authn">
+        <img
+          src="https://cdn3.iconfinder.com/data/icons/new-apple-product/24/touch_id-128.png"
+          alt=""
+          id="authn-img"
+        />
+        Sign In with WebAuthn
+      </button>
+
+      <button id="with-apple">
+        <img
+          src="https://cdn4.iconfinder.com/data/icons/social-media-2273/64/social_media_network_online_apple-128.png"
+          alt=""
+          id="apple-img"
+        />
+        Sign In with Apple
+      </button>
+
+      <!-- ////// with google ///// -->
       <button id="with-google">
         <img
           src="https://cdn3.iconfinder.com/data/icons/logos-brands-3/24/logo_brand_brands_logos_google-128.png"
           alt=""
           id="google-img"
         />
-        Sign Up with Google
+        Sign In with Google
       </button>
+
       <p class="form-term">
         By continuing you agree to our <span>Terms and Conditions</span>, our
         <span>Privacy Policy</span>, and the
@@ -102,7 +97,7 @@
       </p>
       <hr />
       <p class="signin">
-        Already have an account? <a href="signin.html">Sign in</a>
+        Don't have an account? <a href="signup.html">Create an account</a>
       </p>
     </form>
 
@@ -120,6 +115,6 @@
       </p>
     </div>
 
-    <script src="signup.js"></script>
+    <script src="signin.js"></script>
   </body>
 </html>
