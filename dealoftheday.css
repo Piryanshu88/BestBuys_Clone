@@ -3,6 +3,7 @@ body {
   /* display: flex; */
   /* justify-content: center; */
   font-family: sans-serif;
+  /* overflow:initial; */
 }
 #bb {
   width: 90rem;
@@ -10,7 +11,7 @@ body {
 #top {
   margin-top: 50px;
   height: auto;
-  background-color:#0046be;
+  background-color: #0046be;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   padding-bottom: 20px;
@@ -35,9 +36,10 @@ body {
 #time {
   background-color: white;
   color: black;
- padding: 15px;
- width: 230px;
- border-radius: 50PX;
+  padding: 15px;
+  width: 270px;
+  padding-left: 50px;
+  border-radius: 50px;
 }
 #mid {
   height: auto;
@@ -163,30 +165,38 @@ hr {
 
 #topdeals {
   display: flex;
-
-  display: flex;
+  /* display: flex; */
   height: auto;
   gap: 40px;
   margin-left: 50px;
   padding: 20px;
   overflow-x: scroll;
   padding-left: 30px;
+  position: relative;
 }
-#topdeals::-webkit-scrollbar{
+#topdeals::-webkit-scrollbar {
   height: 10px;
 }
-#topdeals::-webkit-scrollbar-thumb{
-  background-color:grey
+#topdeals::-webkit-scrollbar-thumb {
+  background-color: grey;
 }
 #topdeals > div {
+  text-align: center;
   padding: 10px;
   overflow: visible;
   height: auto;
-
+  /* width: 200px; */
 }
-
+#topdeals > div > img {
+  height: 150px;
+  /* width: 150px; */
+}
 #topdeals div:hover {
   border: 2px solid blue;
+  padding: 10px;
+  overflow: visible;
+  height: auto;
+  /* width: 200px; */
 }
 
 #topdeal1 {
