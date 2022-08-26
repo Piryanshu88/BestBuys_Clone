@@ -77,6 +77,24 @@ let arr = [
     dis: "Philips Norelco - Series 3000 Rechargeable Wet/Dry Electric Shaver - Modern Steel Metallic",
     price: "$39.99",
   },
+  {
+    image:
+      "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6482/6482248_rd.jpg;maxHeight=640;maxWidth=550",
+    dis: "Tile Pro (2022) - 1 pack - Black",
+    price: "$27.99",
+  },
+  {
+    image:
+      "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/5252/5252400_rd.jpg;maxHeight=640;maxWidth=550",
+    dis: "KIDdesigns - eKids Zelda Co Branded Headphones - Black",
+    price: "$6.99",
+  },
+  {
+    image:
+      "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6426/6426911_sd.jpg;maxHeight=640;maxWidth=550",
+    dis: "eKids Spiderman Co Branded Headphone - red",
+    price: "$6.99",
+  },
 ];
 
 let container = document.getElementById("products");
@@ -255,3 +273,35 @@ function call1(arr1) {
   });
 }
 call1(arr1);
+
+//  TimeRanges
+
+// Set the date we're counting down to
+var countDownDate = new Date("Jan 5, 2024 15:37:25").getTime();
+
+// Update the count down every 1 second
+var x = setInterval(function () {
+  // Get today's date and time
+  var now = new Date().getTime();
+
+  // Find the distance between now and the count down date
+  var distance = countDownDate - now;
+
+  // Time calculations for days, hours, minutes and seconds
+  var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+  var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+  // Output the result in an element with id="demo"
+  // document.getElementById("time").innerHTML =
+  //   hours + "h " + minutes + "m " + seconds + "s ";
+
+  document.getElementById("time").innerHTML = `${hours} H : ${minutes}M: ${seconds}S`
+
+  // If the count down is over, write some text
+  if (distance < 0) {
+    clearInterval(x);
+    document.getElementById("time").innerHTML = "EXPIRED";
+  }
+}, 1000);

@@ -123,9 +123,9 @@ z-index: 1;
 font-size: 12px;
 
 }
-p{
+/* p{
 border-bottom: 1px solid lightskyblue;
-}
+} */
 p:last-child{
 border-bottom: none;
 }
