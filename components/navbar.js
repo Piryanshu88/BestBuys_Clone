@@ -30,7 +30,7 @@ function navbar(){
         <div id="second-first">
             <div class="dropdown">
                 <span><a href="#">Back-to-School<i class="fa fa-caret-down"></i></a></span>
-                <div class="dropdown-content">
+                <div id="hiho" class="dropdown-content">
                 <p class="underline">Back to School Deals</p>
                 <p class="underline">College Resources</p>
                 <p class="underline">K-12 Tech</p>
@@ -46,7 +46,7 @@ function navbar(){
             <div><a href="#" id='denver'>Health & Wellness</a></div>
             <div class="dropdown">
                 <span><a href="#">More<i class="fa fa-caret-down"></i></a></span>
-                <div class="dropdown-content">
+                <div id="lilo" class="dropdown-content">
                 <p class="underline">Best Buy Outlet</p>
                 <p class="underline">Best Buy Business</p>
                 <p class="underline"><i class="fa fa-times"></i>Close</p>
@@ -65,10 +65,7 @@ function navbar(){
                 <p class="underline"><a class="blue" href="#">Your products</a></p>
                 
                 <p class="underline"><a class="blue" href="#">Payment Methods</a></p>
-                <p class="underline"><a class="blue" href="#">Protection Plans & Subscriptions</a></p>
-                <p class="underline"><a class="blue" href="#">Digital Library</a></p>
-                <p class="underline"><a class="blue" href="#">Best Buy Totaltech</a></p>
-                <p class="underline"><a class="blue" href="#">Free Home Consultation</a></p>
+                
                 <p class="underline"><a class="blue" href="#">Member Offers</a></p>
     
                 <p class="underline"><a class="blue" href="#">Account Settings</a></p>
@@ -89,7 +86,7 @@ function navbar(){
                         </div>
                         <div class="down">
                             <p class="underline"></p>
-                            <div id="k">Nothing to view now</div>
+                            <div id="k">Nothing to view now.....</div>
                         </div>
                     </div>
                 </div>
@@ -110,7 +107,7 @@ function navbar(){
                                 <h1 id="p1">Hi there! Looking
                                     for a current order?</h1>
                                 <p class="underline" id="q">You'll need to sign in or have your order number handy.</p>
-                                <button id="r">Continue</button>
+                                <button  id="r">Continue</button>
                             </div>
                             <div class="down-second">
                                 <img class="s" src="https://pisces.bbystatic.com/image2/BestBuy_US/en_US/images/abn/2015/global/qa2/sh_zs_bs_v2.png" alt="">
@@ -136,8 +133,8 @@ function navbar(){
                             <div class="down-first2">
                                 
                                 <h1 id="v">Looks like you don't have anything saved...</h1>
-                                <p class="underline" class="w">When you see something you like, hit "save" and we'll keep track of it here.</p>
-                                <p class="underline" class="w"><span style="color:blue">Sign in</span> or <span style="color:blue">create an account</span>  to see your stuff on all your devices.</p>
+                                <p class="underline" id="w2">When you see something you like, hit "save" and we'll keep track of it here.</p>
+                                <p class="underline" id="w1"><span style="color:blue">Sign in</span> or <span style="color:blue">create an account</span>  to see your stuff on all your devices.</p>
                             </div>
                             <div class="down-second2">
                                 <img class="x" src="https://pisces.bbystatic.com/image2/BestBuy_US/en_US/images/abn/2015/global/qa2/sh_zs_bs_v2.png" alt="">
