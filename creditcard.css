@@ -1,11 +1,10 @@
 body {
-  margin: 0%;
-  display: flex;
-  justify-content: center;
+  margin: 0px;
   font-family: sans-serif;
 }
 #bb {
-  width: 99rem;
+  width: 100%;
+  margin-top:40px;
 }
 #top1 {
   margin-left: 150px;
@@ -159,23 +158,23 @@ body {
 #mar {
   margin-left: 80px;
 }
-#second {
+#sec {
   /* border: 1px solid red; */
   /* height: 100px; */
   padding: 20px;
   display: flex;
   gap: 30px;
 }
-#second > div {
+#sec > div {
   width: 300px;
 }
 
-#footer {
+#foo {
   height: auto;
   padding: 30px;
-  /* border: 1px solid red; */
-  margin-bottom: 100px;
-  /* margin-top: 100px; */
+  /* border: 1px solid red;  */
+   margin-bottom: 100px;
+   margin-top: 100px;
 }
 
 .ffs{

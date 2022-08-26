@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="./styles/css/index.css">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href='./styles/css/footer.css'>
     
 </head>
 
@@ -325,13 +326,12 @@
  <script src="./scripts/index.js"></script>
 
  <script type="module">
-    import {navbar,footer} from './components/navbar.js'
+    import {navbar} from './components/navbar.js'
     let container=document.getElementById("navbar")
     container.innerHTML=navbar()
+    console.log(navbar())
 
-    let hell=document.querySelector('#luci')
-    hell.innerHTML=footer()
-
+   
     document.getElementById("micro").addEventListener("click",function(){
         localStorage.clear()
     getData()
@@ -351,8 +351,6 @@ async function getData(){
     let res=await data.json()
     console.log(res.result)
         localStorage.setItem('products',JSON.stringify(res.result))
-        
-        
    window.location.href='Productdisplayproject.html'
     }
     catch(err){
@@ -364,4 +362,37 @@ async function getData(){
 document.querySelector('#t3').addEventListener('click',function(){
     window.location.href='dealoftheday.html'
 })
+document.querySelector('#c').addEventListener('click',function(){
+    window.location.href='cart.html'
+})
+
+document.querySelector('#one').addEventListener('click',function(){
+    window.location.href='index.html'
+})
+
+document.querySelector('#deald').addEventListener('click',function(){
+    window.location.href='dealoftheday.html'
+})
+document.querySelector('#tokyo').addEventListener('click',function(){
+    window.location.href='total.html'
+})
+document.querySelector('#berlin').addEventListener('click',function(){
+    window.location.href='creditcard.html'
+})
+document.querySelector('#denver').addEventListener('click',function(){
+    window.location.href='health.html'
+})
+document.querySelector('#dark').addEventListener('click',function(){
+    window.location.href='signin.html'
+})
+document.querySelector('#nairobi').addEventListener('click',function(){
+    window.location.href='signup.html'
+})
+
+
+import {helloworld} from './components/footer.js'
+let hell=document.querySelector('#luci')
+console.log(helloworld())
+    hell.innerHTML=helloworld()
+
 </script>

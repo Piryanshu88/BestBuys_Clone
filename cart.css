@@ -1,28 +1,33 @@
 body {
-  display: flex;
+  
   background-color: #f4f2f4;
   font-family: sans-serif;
 }
 #bb {
   /* border: 1px solid red; */
-  width: 120rem;
+  width: 100%;
   display: flex;
   margin: auto;
 }
 #bbb {
   /* border: 1px solid red; */
-  width: 1300px;
+  /* width: 1300px; */
   display: flex;
   margin: auto;
 }
 
 #bb1 {
   width: 80%;
-  height: 1000px;
+  /* height: 1000px; */
   padding: 20px;
   /* padding-left: 60px; */
   /* overflow: auto;
   scrollbar-color: #f4f2f4; */
+}
+#luci{
+  margin-top:30px ;
+  border-top: 1px solid rgb(138, 130, 130);
+  padding-top: 10px; ;
 }
 #bb2 {
   /* margin-left: 50px; */

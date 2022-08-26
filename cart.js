@@ -22,6 +22,7 @@ function appenddata(data) {
   data.forEach((ele, i) => {
     let div = document.createElement("div");
     // div.style.display = "flex";
+    div.style.alignItems='center'
     // div.style.margin = "15px";
 
     // Product image

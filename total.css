@@ -21,10 +21,6 @@ span:hover {
 
 /* ///////// top sec ////////// */
 
-.top-sec {
-  margin: auto;
-}
-
 .top-sec > h3 {
   width: 73%;
   margin: 20px auto;
@@ -271,6 +267,7 @@ span:hover {
 .first-card-sec {
   width: 73%;
   margin: auto;
+  margin-bottom: 30px;
 }
 
 .first-card-sec h1 {
@@ -307,3 +304,107 @@ span:hover {
 
 /* ///////// faq sec //////////// */
 
+.faq-sec {
+  width: 73%;
+  margin: auto;
+  margin-bottom: 30px;
+}
+
+.faq-sec > h4 {
+  color: var(--main-color);
+  border-top: 1px solid rgb(191, 190, 190);
+  border-bottom: 1px solid rgb(191, 190, 190);
+  padding: 10px 0px;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.faq-sec > div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgb(218, 218, 255);
+  color: rgb(44, 44, 44);
+  padding: 30px 15px;
+}
+
+.faq-sec > div > div {
+  width: 40%;
+}
+
+.faq-sec > div > div:nth-child(2) {
+  width: 56%;
+}
+
+.faq-sec > div > div > img {
+  width: 100%;
+}
+
+.faq-sec > div > div > h1 {
+  color: rgb(44, 44, 44);
+  margin-bottom: 10px;
+}
+
+.faq-sec > div > div > p:nth-child(2) {
+  color: rgb(44, 44, 44);
+  margin-bottom: 10px;
+}
+
+/* ///////// second-card-sec //////// */
+
+.second-card-sec {
+  width: 73%;
+  margin: auto;
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 50px;
+}
+
+.second-card-sec > div {
+  width: 30%;
+  border: 1px solid rgb(206, 206, 206);
+  padding: 15px 15px 25px 15px;
+}
+
+.second-card-sec > div > img {
+  width: 100%;
+  margin-bottom: 15px;
+}
+
+.second-card-sec > div > h3 {
+  color: var(--main-color);
+  margin-bottom: 10px;
+}
+
+.second-card-sec > div > h3:hover {
+  color: black;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.second-card-sec > div > p {
+  font-size: 13px;
+}
+
+/* ///////// disclose-sec ///////// */
+
+.disclose-sec {
+  width: 73%;
+  margin: auto;
+  margin-bottom: 150px;
+}
+
+.disclose-sec h3 {
+  border-bottom: 1px solid rgb(173, 173, 173);
+  margin-bottom: 15px;
+  padding-bottom: 15px;
+}
+
+.disclose-sec p {
+  font-size: 11px;
+  color: rgb(70, 70, 70);
+}
+
+.disclose-sec > div {
+  padding: 2% 4%;
+}

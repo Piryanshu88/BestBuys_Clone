@@ -5,9 +5,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Totaltech Membership</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="total.css" />
+    <link rel="stylesheet" href="./styles/css/footer.css">
   </head>
   <body>
+    <div id="container"></div>
     <!-- ///////// top sec ////////// -->
     <div class="top-sec">
       <h3>Best Buy Totaltech™</h3>
@@ -458,7 +462,77 @@
         <br />
       </div>
     </div>
-
-    <script></script>
+    <div id="luci"></div>
   </body>
 </html>
+
+<script type="module">
+   import {navbar} from './components/navbar.js'
+    let container=document.getElementById("container")
+    container.innerHTML=navbar()
+    
+
+    document.getElementById("micro").addEventListener("click",function(){
+        localStorage.clear()
+    getData()
+    })
+
+    const options = {
+        method: 'GET',
+        headers: {
+            'X-RapidAPI-Key': '48a018cd67msha1ec46ff1a15cecp1823bdjsn94fe7a994ebf',
+            'X-RapidAPI-Host': 'amazon23.p.rapidapi.com'
+        }
+    }
+async function getData(){
+    try{
+        let query=document.getElementById("search").value
+    let data=await fetch(`https://amazon23.p.rapidapi.com/product-search?query=${query}&country=US`, options)
+    let res=await data.json()
+    console.log(res.result)
+        localStorage.setItem('products',JSON.stringify(res.result))
+   window.location.href='Productdisplayproject.html'
+    }
+    catch(err){
+        console.log(err)
+    }
+
+}
+// document.querySelector('#t3').addEventListener('click',function(){
+//     window.location.href='dealoftheday.html'
+// })
+document.querySelector('#c').addEventListener('click',function(){
+    window.location.href='cart.html'
+})
+
+document.querySelector('#c').addEventListener('click',function(){
+    window.location.href='cart.html'
+})
+
+document.querySelector('#one').addEventListener('click',function(){
+    window.location.href='index.html'
+})
+
+document.querySelector('#deald').addEventListener('click',function(){
+    window.location.href='dealoftheday.html'
+})
+document.querySelector('#tokyo').addEventListener('click',function(){
+    window.location.href='total.html'
+})
+document.querySelector('#berlin').addEventListener('click',function(){
+    window.location.href='creditcard.html'
+})
+document.querySelector('#denver').addEventListener('click',function(){
+    window.location.href='health.html'
+})
+document.querySelector('#dark').addEventListener('click',function(){
+    window.location.href='signin.html'
+})
+document.querySelector('#nairobi').addEventListener('click',function(){
+    window.location.href='signup.html'
+})
+import {helloworld} from './components/footer.js'
+let hell=document.querySelector('#luci')
+console.log(helloworld())
+    hell.innerHTML=helloworld()
+</script>

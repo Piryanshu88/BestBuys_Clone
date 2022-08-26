@@ -165,34 +165,66 @@
 
 <script src="./scripts/productdisplay.js"></script>
 <script type="module">
-    import {navbar,footer} from './components/navbar.js'
+    import {navbar} from './components/navbar.js'
     let container=document.getElementById("container")
     container.innerHTML=navbar()
-    let hell=document.querySelector('#luci')
-    hell.innerHTML=footer()
+    // let hell=document.querySelector('#luci')
+    // hell.innerHTML=footer()
     document.getElementById("micro").addEventListener("click",function(){
+        localStorage.clear()
     getData()
-    // console.log("yes")
+    })
 
-function getData(){
     const options = {
         method: 'GET',
         headers: {
-            'X-RapidAPI-Key': 'fdbdcf748dmshbe4209f9d498f77p16a9cdjsna80cce8ce232',
+            'X-RapidAPI-Key': '48a018cd67msha1ec46ff1a15cecp1823bdjsn94fe7a994ebf',
             'X-RapidAPI-Host': 'amazon23.p.rapidapi.com'
         }
-    };
-    let query=document.getElementById("search").value
-    fetch(`https://amazon23.p.rapidapi.com/product-search?query=${query}&country=US`, options)
-        .then(response => response.json())
-        .then(response => console.log(response))
-        .catch(err => console.error(err));
-}
+    }
+async function getData(){
+    try{
+        let query=document.getElementById("search").value
+    let data=await fetch(`https://amazon23.p.rapidapi.com/product-search?query=${query}&country=US`, options)
+    let res=await data.json()
+    console.log(res.result)
+        localStorage.setItem('products',JSON.stringify(res.result))
+   window.location.href='Productdisplayproject.html'
+    }
+    catch(err){
+        console.log(err)
+    }
 
-})
+}
 
 document.querySelector('#c').addEventListener('click',function(){
     window.location.href='cart.html'
+})
+document.querySelector('#c').addEventListener('click',function(){
+    window.location.href='cart.html'
+})
+
+document.querySelector('#one').addEventListener('click',function(){
+    window.location.href='index.html'
+})
+
+document.querySelector('#deald').addEventListener('click',function(){
+    window.location.href='dealoftheday.html'
+})
+document.querySelector('#tokyo').addEventListener('click',function(){
+    window.location.href='total.html'
+})
+document.querySelector('#berlin').addEventListener('click',function(){
+    window.location.href='creditcard.html'
+})
+document.querySelector('#denver').addEventListener('click',function(){
+    window.location.href='health.html'
+})
+document.querySelector('#dark').addEventListener('click',function(){
+    window.location.href='signin.html'
+})
+document.querySelector('#nairobi').addEventListener('click',function(){
+    window.location.href='signup.html'
 })
 
 </script>

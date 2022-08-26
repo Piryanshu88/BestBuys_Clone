@@ -6,7 +6,7 @@ body {
   /* overflow:initial; */
 }
 #bb {
-  width: 90rem;
+  width: 100%
 }
 #top {
   margin-top: 50px;
