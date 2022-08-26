@@ -1,5 +1,7 @@
 
 
+
+
 function navbar(){
     return `
     
@@ -24,12 +26,12 @@ function navbar(){
       
        
      </div>
-     <hr>
+     <hr id="dedo">
     
      <div id="second">
         <div id="second-first">
             <div class="dropdown">
-                <span><a href="#">Back-to-School<i class="fa fa-caret-down"></i></a></span>
+                <span><a class="romy" href="#">Back-to-School<i class="fa fa-caret-down"></i></a></span>
                 <div class="dropdown-content">
                 <p class="underline">Back to School Deals</p>
                 <p class="underline">College Resources</p>
@@ -38,14 +40,14 @@ function navbar(){
                 <p class="underline"><i class="fa fa-times"></i>Close</p>
                 </div>
             </div>
-            <div><a href="#">Top Deals</a></div>
-            <div><a href="#">Deal of the Day</a></div>
-            <div><a href="#">Totaltech Membership</a></div>
-            <div><a href="#">Credit Cards</a></div>
-            <div><a href="#">Gift Cards</a></div>
-            <div><a href="#">Health & Wellness</a></div>
+            <div><a class="romy" href="#">Top Deals</a></div>
+            <div><a class="romy" href="#">Deal of the Day</a></div>
+            <div><a class="romy" href="#">Totaltech Membership</a></div>
+            <div><a class="romy" href="#">Credit Cards</a></div>
+            <div><a class="romy" href="#">Gift Cards</a></div>
+            <div><a class="romy" href="#">Health & Wellness</a></div>
             <div class="dropdown">
-                <span><a href="#">More<i class="fa fa-caret-down"></i></a></span>
+                <span><a class="romy" href="#">More<i class="fa fa-caret-down"></i></a></span>
                 <div class="dropdown-content">
                 <p class="underline">Best Buy Outlet</p>
                 <p class="underline">Best Buy Business</p>
@@ -53,31 +55,31 @@ function navbar(){
               </div>
              </div>
     <div  class="dropdown">
-                <span ><a href="#"><i class="fa fa-user-circle"></i>Account<i class="fa fa-caret-down"></i></a></span>
+                <span ><aclass="romy" href="#"><i class="fa fa-user-circle"></i>Account<i class="fa fa-caret-down"></i></aclass=></span>
                 <div id="scroll" class="dropdown-content">
                 <p class="underline" id="para">Becoming a My Best Buy® member comes with
                     easy order tracking, rewards, offers and more.</p>
                 <button class="btn" id="dark">Sign In</button>
                 <button class="btn">Create Account</button>
                 
-                <p class="underline"><a class="blue" href="#">Account</a></p>
-                <p class="underline"><a class="blue" href="#">Order & Purchases</a></p>
-                <p class="underline"><a class="blue" href="#">Your products</a></p>
+                <p class="underline"><a style="color:#0046be"class="romy" href="#">Account</a></p>
+                <p class="underline"><a style="color:#0046be"class="romy" href="#">Order & Purchases</a></p>
+                <p class="underline"><a style="color:#0046be"class="romy" href="#">Your products</a></p>
                 
-                <p class="underline"><a class="blue" href="#">Payment Methods</a></p>
-                <p class="underline"><a class="blue" href="#">Protection Plans & Subscriptions</a></p>
-                <p class="underline"><a class="blue" href="#">Digital Library</a></p>
-                <p class="underline"><a class="blue" href="#">Best Buy Totaltech</a></p>
-                <p class="underline"><a class="blue" href="#">Free Home Consultation</a></p>
-                <p class="underline"><a class="blue" href="#">Member Offers</a></p>
+                <p class="underline"><a style="color:#0046be"class="romy" href="#">Payment Methods</a></p>
+                <p class="underline"><a style="color:#0046be"class="romy" href="#">Protection Plans & Subscriptions</a></p>
+                <p class="underline"><a style="color:#0046be"class="romy" href="#">Digital Library</a></p>
+                <p class="underline"><a style="color:#0046be"class="romy" href="#">Best Buy Totaltech</a></p>
+                <p class="underline"><a style="color:#0046be"class="romy" href="#">Free Home Consultation</a></p>
+                <p class="underline"><a style="color:#0046be"class="romy" href="#">Member Offers</a></p>
     
-                <p class="underline"><a class="blue" href="#">Account Settings</a></p>
+                <p class="underline"><a href="#">Account Settings</a></p>
                 <p class="underline"><i class="fa fa-times"></i>Close</p>
                 </div>
             </div>
 
                 <div class="dropdown">
-                    <span><a href="#">Recently Viewed<i class="fa fa-caret-down"></i></a></span>
+                    <span><a class="romy" href="#">Recently Viewed<i class="fa fa-caret-down"></i></a></span>
                     <div class="h" class="dropdown-content">
                         <div class="up">
                             
@@ -96,7 +98,7 @@ function navbar(){
 
 
                 <div class="dropdown">
-                    <span><a href="#">Order Status<i class="fa fa-caret-down"></i></a></span>
+                    <span><a class="romy" href="#">Order Status<i class="fa fa-caret-down"></i></a></span>
                     <div class="h" class="dropdown-content">
                         <div class="l" class="up">
                             <div class="m"><i class="fa fa-gift fa-2x" aria-hidden="true"></i>Order Status</div>
@@ -122,7 +124,7 @@ function navbar(){
                 
 
                 <div class="dropdown">
-                    <span><a href="#">Saved Items<i class="fa fa-caret-down"></i></a></span>
+                    <span><a class="romy"href="#">Saved Items<i class="fa fa-caret-down"></i></a></span>
                     <div class="h" class="dropdown-content">
                         <div class="o" class="up">
                             <div class="m"><i class="fa fa-bookmark-o fa-2x"></i>Saved Items</div>
@@ -195,71 +197,71 @@ function footer(){
         </div>
         
     </div>
-    <hr>
+    <hr class="hum">
     <div id="middle">
         <div id="list">
             <div class="c1">
                 <div class="d1">
                    <div class="tag">Order & Purchases</div>
-                   <div><a href="">Check Order Status</a></div>
-                   <div><a href="">Shipping, Delivery & Pickup</a></div>
-                   <div><a href="">Returns & Exchanges</a></div>
-                   <div><a href="">Price Match Guarantee</a></div>
-                   <div><a href="">Product Recalls</a></div>
-                   <div><a href="">Trade-In Program</a></div>
-                   <div><a href="">Gift Cards</a></div> 
+                   <div><a class="road" href="">Check Order Status</a></div>
+                   <div><a class="road" href="">Shipping, Delivery & Pickup</a></div>
+                   <div><a class="road" href="">Returns & Exchanges</a></div>
+                   <div><a class="road" href="">Price Match Guarantee</a></div>
+                   <div><a class="road" href="">Product Recalls</a></div>
+                   <div><a class="road" href="">Trade-In Program</a></div>
+                   <div><a class="road" href="">Gift Cards</a></div> 
                 </div>
                 <div class="d1">
                     <div class="tag">Payment Options</div>
-                    <div><a href="">My Best Buy® Credit Card</a></div>
-                    <div><a href="">Pay Your Bill at Citibank</a></div>
-                    <div><a href="">Lease to Own</a></div>
+                    <div><a class="road" href="">My Best Buy® Credit Card</a></div>
+                    <div><a class="road" href="">Pay Your Bill at Citibank</a></div>
+                    <div><a class="road" href="">Lease to Own</a></div>
                 </div>
             </div>
             <div class="c1">
                 <div class="d1">
                     <div class="tag">Support & Services</div>
-                    <div><a href="">Visit our Support Center</a></div>
-                    <div><a href="">Shop with an Expert</a></div>
-                    <div><a href="">Schedule a Service</a></div>
-                    <div><a href="">Manage an Appointment</a></div>
-                    <div><a href="">Protection & Support Plans</a></div>
-                    <div><a href="">Haul Away & Recycling</a></div>
-                    <div><a href="">Contact Us</a></div> 
+                    <div><a class="road" href="">Visit our Support Center</a></div>
+                    <div><a class="road" href="">Shop with an Expert</a></div>
+                    <div><a  class="road" href="">Schedule a Service</a></div>
+                    <div><a class="road" href="">Manage an Appointment</a></div>
+                    <div><a class="road" href="">Protection & Support Plans</a></div>
+                    <div><a class="road" href="">Haul Away & Recycling</a></div>
+                    <div><a class="road" href="">Contact Us</a></div> 
                 </div>
                 <div class="d1">
                     <div class="tag">Rewards & Membership</div>
-                    <div><a href="">Best Buy Totaltech</a></div>
-                    <div><a href="">My Best Buy</a></div>
-                    <div><a href="">View Points & Certificates</a></div>
-                    <div><a href="">Member Offers</a></div>
+                    <div><a class="road" href="">Best Buy Totaltech</a></div>
+                    <div><a class="road" href="">My Best Buy</a></div>
+                    <div><a class="road" href="">View Points & Certificates</a></div>
+                    <div><a class="road" href="">Member Offers</a></div>
                 </div>
             </div>
             <div class="c1">
                 <div class="d1">
                     <div class="tag">Partnerships</div>
-                    <div><a href="">Affiliate Program</a></div>
-                    <div><a href="">Advertise with Us</a></div>
-                    <div><a href="">Developers</a></div>
-                    <div><a href="">Best Buy Health</a></div>
-                    <div><a href="">Best Buy Education</a></div>
-                    <div><a href="">Best Buy Business</a></div>
+                    <div><a class="road" href="">Affiliate Program</a></div>
+                    <div><a class="road" href="">Advertise with Us</a></div>
+                    <div><a class="road" href="">Developers</a></div>
+                    <div><a class="road" href="">Best Buy Health</a></div>
+                    <div><a class="road" href="">Best Buy Education</a></div>
+                    <div><a class="road" href="">Best Buy Business</a></div>
                     
                 </div>
                 <div class="d1">
                     <div class="tag">About Best Buy</div>
-                    <div><a href="">Corporate Information</a></div>
-                    <div><a href="">Careers</a></div>
-                    <div><a href="">Corporate Responsibility & Sustainability</a></div>
-                    <div><a href="">Discover & Learn</a></div>
+                    <div><a class="road"href="">Corporate Information</a></div>
+                    <div><a class="road"href="">Careers</a></div>
+                    <div><a class="road"href="">Corporate Responsibility & Sustainability</a></div>
+                    <div><a class="road"href="">Discover & Learn</a></div>
                     
                 </div>
             </div>
             <div id="learn">
                 <div>
-                    <p class="sc"><a href="#">Sign in or Create Account</a></p>
+                    <p class="sc"><a class="road" href="#">Sign in or Create Account</a></p>
                 </div>
-                <hr>
+                <hr class="hum">
                 <div>
                     <p style="font-weight:bold ;">Get the latest deals and more.</p>
                     <div>
@@ -268,17 +270,17 @@ function footer(){
                     </div>
                     
                 </div>
-                <hr>
-                <div id="bb">
+                <hr class="hum">
+                <div id="bob">
                     
                     <img style="width:18%" src="https://api.iconify.design/carbon/application-mobile.svg?color=blue" alt="">
-                    <div id="bb1">
+                    <div id="bob1">
                     <h4>Best Buy app</h4>
                     <h6 style="color:#0046be ; margin-top:-18px">Learn more ›</h6>
                     </div>
                     
                 </div>
-                <hr>
+                <hr class="hum">
                 <div>
                     <img class="dis" src="https://api.iconify.design/bxl/facebook-circle.svg?color=blue" alt="">
                     <img class="dis" src="https://api.iconify.design/jam/twitter-circle.svg?color=blue" alt="">
@@ -286,17 +288,17 @@ function footer(){
                     <img class="dis" src="https://api.iconify.design/icomoon-free/pinterest2.svg?color=blue" alt="">
                     <img class="dis" src="https://api.iconify.design/fa/youtube.svg?color=blue" alt="">
                 </div>
-                <hr>
+                <hr class="hum">
                 <div>
-                    <p class="sc"><a href="#">Forums, blogs & more</a></p>
+                    <p class="sc"><a class="road" href="#">Forums, blogs & more</a></p>
                 </div>
             </div>
         </div>
         
         <div id="di">
             <p id="e1">How was your experience?<span style="color:#0046be">Give feedback about our website</span></p>
-            <p class="h1"><a href="">Mobile Site</a></p>
-            <p class="h2"><a href="">Best Buy Canada</a></p>
+            <p class="h1"><a class="road" href="">Mobile Site</a></p>
+            <p class="h2"><a class="road" href="">Best Buy Canada</a></p>
         
         </div>
 
@@ -304,7 +306,7 @@ function footer(){
 
         
     </div>
-    <hr>
+    <hr class="hum">
     <div id="lower">
         <div id="g1">
             <div>Accessibility</div>
