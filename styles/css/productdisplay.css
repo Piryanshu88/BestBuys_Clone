@@ -1,0 +1,76 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: sans-serif;
+}
+#main{
+    display: 90%;
+    border: 1px solid #908989;
+    display: flex;
+}
+#filter{
+    width: 25%;
+    border: 1px solid #908989;
+    max-height:90vh;
+    overflow-y: scroll;
+}
+#display{
+    width: 75%;
+    
+}
+#h2{
+    border-bottom: 1px solid #908989;
+    padding: 20px 15px;
+    width: 95%;
+    margin: auto;
+}
+#ready{
+    padding: 20px;
+    line-height: 25px;
+    border-bottom: 1px solid #908989;
+}
+.ava{
+    padding: 20px;
+    line-height: 25px;
+    border-bottom: 1px solid #908989;
+}
+#pri,#pro,#size,#ram,#features,#videocard,#collection{
+    padding: 20px;
+    border-bottom: 1px solid #908989;
+    line-height: 35px;
+    padding-left: 40px;
+}
+#products_display>div>div{
+    width: 30%;
+    
+}
+#products_display>div{
+    align-items: center;
+    margin-bottom: 15px;
+    border-bottom: 1px solid #908989;
+}
+#products_display>div:nth-child(1){
+    margin-top: 20px;
+}
+#products_display>div:hover .bo{
+    text-decoration: underline;
+}
+
+ .main_image{
+
+text-align: center;
+
+} 
+.bo,.ese{
+    color: rgb(24, 71, 227);
+}
+.btn{
+    padding: 5px 105px;
+    font-size: 18px;
+    font-weight: bolder;
+    border-radius: 5px;
+    background-color: #FFF200;
+}
+.btn:hover{
+    background-color: #ece005;
+}
