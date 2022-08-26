@@ -202,6 +202,16 @@ color: black;
 #scroll{
 height: 350px;
 overflow-y: scroll;
+
+}
+#nairobi~p{
+    margin-bottom: 20px;
+}
+#hiho>p{
+    margin-bottom: 20px;
+}
+#lilo>p{
+    margin-bottom: 20px; 
 }
 
 .h{
@@ -244,9 +254,10 @@ margin-left:-300px;
 }
 
 #k{
-font-size: large;
-margin-left:350px;
+font-size: 3em;
+margin-left:250px;
 margin-top: 100px;
+color: black;
 }
 .l{
 display: grid;
@@ -277,23 +288,25 @@ margin-top: 75px;
 #q{
 border: none;
 font-size: 15px;
-/* text-align: center; */
+margin-top: 25px;
+
 }
 #p1{
-/* text-align: center; */
+margin-top: 25px;
 font-size: 38px;
 width: 60%;
 }
 #r{
 box-sizing: border-box;
 width: 60%;
-/* margin-left: 45px; */
+margin-top: 25px;
 font-size: 12px;
 padding: 5px;
 background-color: #0046be;
 border: none;
 border-radius: 3px;
 color: white;
+
 }
 #r:hover{
 background-color: darkblue;
@@ -333,15 +346,16 @@ margin: auto;
 margin-top:40px ;
 font-size: 30px;
 }
-.w{
-font-size: 8px;
+#w1,#w2{
+font-size: 12px;
 width: 55%;
 margin: auto;
 margin-top: 10px;
 border-bottom: 0;
 }
 .x{
-width: 43%;
+width: 82%;
+margin-left: -50%;
 }
 /* .down-first2{
 margin-top: %;
