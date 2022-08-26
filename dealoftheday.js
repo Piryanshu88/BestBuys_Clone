@@ -263,12 +263,13 @@ let container1 = document.getElementById("topdeals");
 
 function call1(arr1) {
   arr1.forEach(({ image, title }) => {
+    // console.log('title:', title)
     let div = document.createElement("div");
     let img = document.createElement("img");
     img.src = image;
-    let p = document.createElement("a");
+    let p = document.createElement("p");
     p.innerText = title;
-    div.append(img, p);
+    div.append(img,p);
     container1.append(div);
   });
 }
@@ -297,7 +298,9 @@ var x = setInterval(function () {
   // document.getElementById("time").innerHTML =
   //   hours + "h " + minutes + "m " + seconds + "s ";
 
-  document.getElementById("time").innerHTML = `${hours} H : ${minutes}M: ${seconds}S`
+  document.getElementById(
+    "time"
+  ).innerHTML = `${hours} H : ${minutes}M: ${seconds}S`;
 
   // If the count down is over, write some text
   if (distance < 0) {
