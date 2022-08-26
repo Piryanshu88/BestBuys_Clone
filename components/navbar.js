@@ -1,7 +1,5 @@
 
 
-
-
 function navbar(){
     return `
     
@@ -73,7 +71,7 @@ function navbar(){
                 <p class="underline"><a style="color:#0046be"class="romy" href="#">Free Home Consultation</a></p>
                 <p class="underline"><a style="color:#0046be"class="romy" href="#">Member Offers</a></p>
     
-                <p class="underline"><a href="#">Account Settings</a></p>
+                <p class="underline"><a style="color:#0046be" class="romy" href="#">Account Settings</a></p>
                 <p class="underline"><i class="fa fa-times"></i>Close</p>
                 </div>
             </div>
