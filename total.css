@@ -1,0 +1,309 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+:root {
+  --main-color: #0046be;
+}
+
+span {
+  color: var(--main-color);
+}
+
+span:hover {
+  color: black;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+/* ///////// top sec ////////// */
+
+.top-sec {
+  margin: auto;
+}
+
+.top-sec > h3 {
+  width: 73%;
+  margin: 20px auto;
+}
+
+.top-sec > div {
+  background-color: rgb(245, 245, 255);
+  padding: 2px 0px;
+}
+
+.top-sec > div > p {
+  width: 73%;
+  font-weight: bold;
+  font-size: 14px;
+  margin: auto;
+}
+
+/* ////////// banner sec ///////// */
+
+.banner-sec {
+  background-color: #eaeaea;
+}
+
+.banner-sec > div {
+  display: flex;
+  justify-content: space-between;
+  width: 73%;
+  margin: auto;
+  padding-top: 30px;
+}
+
+.banner-sec > div > div {
+  width: 50%;
+}
+
+.banner-img > img {
+  width: 90%;
+}
+
+.banner-left-side > img {
+  width: 200px;
+  margin-bottom: 15px;
+}
+
+.banner-left-side > h1 {
+  color: var(--main-color);
+  font-weight: 1000;
+  margin-bottom: 15px;
+}
+
+.stars {
+  display: flex;
+  margin-bottom: 10px;
+}
+
+.stars > img {
+  width: 20px;
+}
+
+.stars > span {
+  margin-left: 5px;
+}
+
+.banner-sec h2 {
+  font-weight: 1000;
+}
+
+.banner-sec button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(255, 221, 0);
+  border: none;
+  border-radius: 5px;
+  padding: 8px 0px;
+  width: 100%;
+  cursor: pointer;
+  font-weight: 1000;
+}
+
+.banner-sec button img {
+  width: 20px;
+  margin-right: 10px;
+}
+
+/* ///////// link sec ////////// */
+
+.link-sec > h1 {
+  line-height: 0.1em;
+  margin: 100px 0px 70px 0px;
+  border-bottom: 1px solid rgb(172, 171, 171);
+  text-align: center;
+  font-weight: 1000;
+}
+
+.link-sec > h1 > span {
+  padding: 0px 20px;
+  background-color: white;
+  color: black;
+}
+
+.link-container {
+  width: 50%;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 30px 20px;
+}
+
+.link-container > div {
+  text-align: center;
+  cursor: pointer;
+}
+
+.link-container > div > img {
+  width: 60%;
+  margin-bottom: 10px;
+}
+
+.link-container > div > p {
+  color: var(--main-color);
+  font-weight: bold;
+  line-height: 1.2em;
+}
+
+.link-container > div:hover p {
+  color: black;
+  text-decoration: underline;
+}
+
+/* ///////// video sec //////////// */
+
+.video-sec {
+  width: 73%;
+  display: flex;
+  margin: 30px auto;
+}
+
+.video-sec > div {
+  width: 50%;
+}
+
+.video-sec > div:nth-child(2) {
+  background-color: lavender;
+  padding: 50px 30px;
+}
+
+.video-sec > div > h1 {
+  margin-bottom: 20px;
+}
+
+/* ///////////// blue sec ///////////// */
+
+.blue-sec {
+  background-color: var(--main-color);
+  width: 98%;
+  margin: auto;
+  margin-bottom: 80px;
+}
+
+.blue-sec > div {
+  display: flex;
+  justify-content: space-between;
+  width: 73%;
+  margin: auto;
+  padding: 30px 0px;
+}
+
+.blue-sec > div > div:nth-child(1) {
+  width: 20%;
+}
+
+.blue-sec > div > div > img {
+  width: 100%;
+}
+
+.blue-sec > div > div > h1 {
+  margin-bottom: 10px;
+  font-weight: 1000;
+}
+
+.blue-sec > div > div:nth-child(2) {
+  width: 78%;
+  color: white;
+}
+
+.blue-sec > div > div > button {
+  width: 100%;
+  border: 1px solid white;
+  border-radius: 5px;
+  color: var(--main-color);
+  font-weight: bold;
+  padding: 8px;
+  transition: background-color 0.2s, color 0.2s;
+}
+
+.blue-sec > div > div > button:hover {
+  background-color: var(--main-color);
+  color: white;
+  cursor: pointer;
+}
+
+/* ///////// side side sec ///////// */
+
+.side-side-sec {
+  width: 73%;
+  margin: auto;
+}
+
+.side-side-sec > div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 150px;
+}
+
+.side-side-sec > div > div {
+  width: 48%;
+}
+
+.side-side-sec > div > div > img {
+  width: 100%;
+}
+
+.side-side-sec > div > div > h1 {
+  font-weight: 1000;
+  margin-bottom: 15px;
+}
+
+.side-side-sec > div > div > p {
+  margin-bottom: 15px;
+}
+
+.side-side-sec > div > div > p > span {
+  font-weight: bold;
+}
+
+.side-side-sec > div > div > h3 {
+  margin-bottom: 15px;
+}
+
+/* //////// first card sec ////////// */
+
+.first-card-sec {
+  width: 73%;
+  margin: auto;
+}
+
+.first-card-sec h1 {
+  font-weight: 1000;
+  margin-bottom: 20px;
+}
+
+.first-card-sec > div {
+  display: flex;
+  justify-content: space-between;
+}
+
+.first-card-sec > div > div {
+  width: 22%;
+}
+
+.first-card-sec > div > div > img {
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.first-card-sec > div > div > h3 {
+  margin-bottom: 10px;
+  font-weight: 1000;
+}
+
+.first-card-sec > div > div > p {
+  margin-bottom: 10px;
+}
+
+.first-card-sec > div > div > p + p {
+  font-size: 13px;
+}
+
+/* ///////// faq sec //////////// */
+

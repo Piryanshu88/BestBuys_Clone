@@ -6,8 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Health & Wellness</title>
     <link rel="stylesheet" href="health.css" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
   </head>
   <body>
+    <div id="container"></div>
     <!-- ///////////////// top 1 sec //////////// -->
     <div class="top-1-sec">
       <p>
@@ -459,6 +462,38 @@
       </div>
     </div>
 
-    <script src="health.js"></script>
+    
+<script type="module">
+      import {navbar} from './components/navbar.js'
+      let container=document.getElementById("container")
+      container.innerHTML=navbar()
+  
+      document.getElementById("micro").addEventListener("click",function(){
+      getData()
+      // console.log("yes")
+  
+  function getData(){
+      const options = {
+          method: 'GET',
+          headers: {
+              'X-RapidAPI-Key': 'fdbdcf748dmshbe4209f9d498f77p16a9cdjsna80cce8ce232',
+              'X-RapidAPI-Host': 'amazon23.p.rapidapi.com'
+          }
+      };
+      let query=document.getElementById("search").value
+      fetch(`https://amazon23.p.rapidapi.com/product-search?query=${query}&country=US`, options)
+          .then(response => response.json())
+          .then(response => console.log(response))
+          .catch(err => console.error(err));
+  }
+  
+  })
+  </script>
+  
+  
+  
+  <!-- Add this link for- bootstrap-: -->
+    
+  
   </body>
 </html>
