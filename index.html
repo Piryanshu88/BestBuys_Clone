@@ -8,7 +8,8 @@
     <title>Best Buys | Official and Online Store  </title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="./styles/css/index.css">
-    <link rel="stylesheet" href="./js201-project(bestbuy)/style.css">
+    <link rel="stylesheet" href="style.css">
+    
 </head>
 
 <body>
@@ -135,7 +136,7 @@
         <div id="total">
             <div id="bestbuy">
                 <img src="https://pisces.bbystatic.com/image2/BestBuy_US/dam/total-tech-stacked-reverse-sol86118-059fc768-50d8-43ab-b62a-3bded1b62731.png" style="width:50%"><br>
-                <button id="btn-1">Learn more</button>
+                <button id="btn-1" onclick='window.location.href="total.html"'>Learn more</button>
             </div>
             <div id="tech">
                 <h2 style="color:white">The membership you and your tech deserve.</h2>
@@ -306,7 +307,7 @@
         </div>
         <div class="cr-4">
             <p>Offer ends 9/5/22.</p>
-            <button id="cr-btn">learn more</button>
+            <button id="cr-btn" onclick="window.location.href='creditcard.html'">learn more</button>
         </div>
     </div>
 
@@ -315,35 +316,52 @@
         <!-- putting data divs by js-->
     </div>
 
+    <div id="luci"></div>
+
 
 </body>
 </html>
- <script src="./scripts/index.js">
-    //https://api.bestbuy.com/v1/products/6111518.json?apiKey=YourAPIKey
- </script>
+
+ <script src="./scripts/index.js"></script>
+
  <script type="module">
-    import {navbar} from './js201-project(bestbuy)/components/navbar.js'
+    import {navbar,footer} from './components/navbar.js'
     let container=document.getElementById("navbar")
     container.innerHTML=navbar()
 
-    document.getElementById("micro").addEventListener("click",function(){
-    getData()
-    // console.log("yes")
+    let hell=document.querySelector('#luci')
+    hell.innerHTML=footer()
 
-function getData(){
+    document.getElementById("micro").addEventListener("click",function(){
+        localStorage.clear()
+    getData()
+    })
+
     const options = {
         method: 'GET',
         headers: {
-            'X-RapidAPI-Key': 'fdbdcf748dmshbe4209f9d498f77p16a9cdjsna80cce8ce232',
+            'X-RapidAPI-Key': '48a018cd67msha1ec46ff1a15cecp1823bdjsn94fe7a994ebf',
             'X-RapidAPI-Host': 'amazon23.p.rapidapi.com'
         }
-    };
-    let query=document.getElementById("search").value
-    fetch(`https://amazon23.p.rapidapi.com/product-search?query=${query}&country=US`, options)
-        .then(response => response.json())
-        .then(response => console.log(response))
-        .catch(err => console.error(err));
+    }
+async function getData(){
+    try{
+        let query=document.getElementById("search").value
+    let data=await fetch(`https://amazon23.p.rapidapi.com/product-search?query=${query}&country=US`, options)
+    let res=await data.json()
+    console.log(res.result)
+        localStorage.setItem('products',JSON.stringify(res.result))
+        
+        
+   window.location.href='Productdisplayproject.html'
+    }
+    catch(err){
+        console.log(err)
+    }
+
 }
 
+document.querySelector('#t3').addEventListener('click',function(){
+    window.location.href='dealoftheday.html'
 })
 </script>

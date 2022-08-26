@@ -461,13 +461,17 @@
         </div>
       </div>
     </div>
+    <div id="luci"></div>
 
     
 <script type="module">
-      import {navbar} from './components/navbar.js'
+      import {navbar,footer} from './components/navbar.js'
       let container=document.getElementById("container")
       container.innerHTML=navbar()
-  
+
+
+    let hell=document.querySelector('#luci')
+    hell.innerHTML=footer()
       document.getElementById("micro").addEventListener("click",function(){
       getData()
       // console.log("yes")

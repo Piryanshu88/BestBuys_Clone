@@ -16,7 +16,7 @@
 }
 #school-deals>div{
     position: absolute;
-    top:55%;
+    top:75%;
     line-height: 55px;
     text-align: center ;
     margin-left: 65px;
@@ -149,7 +149,7 @@
 }
 #m1{
     position: absolute;
-    top: 120%;
+    top: 137%;
     font-size: 35px;
     
     z-index: 1;
@@ -157,7 +157,7 @@
 }
 #m2{
     position: absolute;
-    top: 127%;
+    top: 144%;
     
     font-size: 18px;
     font-weight: bold;
@@ -166,7 +166,7 @@
 }
 #m3{
     position: absolute;
-    top: 133%;
+    top: 150%;
     z-index: 1;
     
     left: 4%;
@@ -174,14 +174,14 @@
 }
 #m4{
     position: absolute;
-    top: 138%;
+    top: 155%;
     
     z-index: 1;
     left: 19%;
 }
 #m5{
     position: absolute;
-    top: 143%;
+    top: 160%;
     z-index: 1;
     
     left: 22%;
@@ -198,7 +198,7 @@
 }
 #r1{
     position: absolute;
-    top:123%;
+    top:138%;
     z-index: 1;
     
     font-size: 35px;
@@ -206,7 +206,7 @@
 }
 #r2{
     position: absolute;
-    top: 129%;
+    top: 145%;
     
     z-index: 1;
     right: 23.5%;
@@ -214,7 +214,7 @@
 #r3{
 
     position: absolute;
-    top: 135%;
+    top: 150%;
     cursor: pointer;
     right: 40.8%;
     z-index: 1;
@@ -250,7 +250,7 @@
     z-index: 1;
     
     position: absolute;
-    top: 217%;
+    top: 238%;
     left: 40px;
     line-height: 30px;
 }
@@ -489,6 +489,10 @@
 }
 .trending>div{
     width:18% ;
+}
+#luci{
+    border-top: 2px solid grey;
+    padding-top: 30px;
 }
 
 @media all and (min-width:481px) and (max-width:1060px){
