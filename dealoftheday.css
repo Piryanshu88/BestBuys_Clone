@@ -1,16 +1,16 @@
 body {
-  margin: 0%;
-  display: flex;
-  justify-content: center;
+  /* margin: 0px; */
+  /* display: flex; */
+  /* justify-content: center; */
   font-family: sans-serif;
 }
 #bb {
-  width: 99rem;
+  width: 90rem;
 }
 #top {
   margin-top: 50px;
   height: auto;
-  background-color: rgb(70, 70, 218);
+  background-color:#0046be;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   padding-bottom: 20px;
@@ -35,8 +35,9 @@ body {
 #time {
   background-color: white;
   color: black;
-  width: 250px;
-  height: 50px;
+ padding: 15px;
+ width: 230px;
+ border-radius: 50PX;
 }
 #mid {
   height: auto;
