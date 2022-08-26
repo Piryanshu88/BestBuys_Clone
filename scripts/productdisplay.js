@@ -213,6 +213,7 @@ let data=[{
 Appenddata(data)
 function Appenddata(data){
     document.querySelector('#products_display').innerHTML=""
+    document.querySelector('#leng').innerText=`(${data.length} items)`
 
     data.forEach((ele)=>{
 

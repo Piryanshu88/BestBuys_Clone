@@ -8,6 +8,14 @@
     border: 1px solid #908989;
     display: flex;
 }
+#dis{
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #908989;
+}
+#leng{
+    font-size: 16px;
+}
 #filter{
     width: 25%;
     border: 1px solid #908989;
