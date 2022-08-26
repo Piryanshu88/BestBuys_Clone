@@ -13,27 +13,24 @@
 }
 #school-deals{
     text-align: center;
-    text-transform: capitalize;
+}
+#school-deals>div{
+    position: absolute;
+    top:55%;
+    line-height: 55px;
+    text-align: center ;
+    margin-left: 65px;
+    z-index: 1;
 }
 #t1{
-    position: absolute;
-    top: 400px;
     color: white;
-    left: 150px;
-    width: 30%;
-    font-size: 38px;
+    font-size: 2rem;
 }
 #t2{
-    position: absolute;
-    top: 510px;
     color: white;
-    left: 76px;
     font-size: 16px;
 }
 #t3{
-    position: absolute;
-    top: 550px;
-    left: 350px;
     font-weight: bold;
     padding: 8px 8px;
     background-color: #FFF301;
@@ -442,6 +439,9 @@
     margin-top: 75%;
     padding-left: 40px;
 }
+#school-deals img{
+    width: 95%;position: relative;
+}
 #credit-card{
     width: 98%;
     margin: auto;
@@ -484,15 +484,182 @@
     line-height: 30px;
     margin-bottom: 20px;
 }
-/* @media screen and (min-width:481px) and (max-width:761px){
-    #m1{
-        top:118%;
+ .comp{
+    height: 210px;
+}
+.trending>div{
+    width:18% ;
+}
+
+@media all and (min-width:481px) and (max-width:1060px){
+#essential{
+    display:none;
+}
+#top-section{
+    display: block;
+    width: 100%;
+}
+#top-section-right>#deals{
+    width: 200%;
+}
+#school-deals img{
+    width: 200%;
+    height: 500px;
+    
+}
+#school-deals>div{
+    top: 50%;
+    left: 20%;
+}
+#recommended{
+    padding-bottom:10px ;
+}
+#c2{
+    font-size: 35px;
+}
+#mid-section{
+    display: none;
+}
+#meme{
+    display: none;
+}
+#lower-section{
+    display: block;
+    width: 300%;
+}
+#lower-section>div>div{
+    display: flex;
+}
+.comp{
+    height: auto;
+}
+.maylike{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+}
+.trending{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+
+}
+.trending>div{
+    width:80% ;
+}
+
+
+#featured{
+    display: grid;
+    grid-template-columns:repeat(3,1fr);
+    gap: 20px;
+}
+}
+
+
+@media all and (min-width:320px) and (max-width:480px){
+    
+    #school-deals{
+        display: none;
     }
-    #m2{
-        top:125%
+    #clearance{
+        line-height: 35px;
+    }
+    #c1{
+        margin-top: 10px;
+        margin-left: 20px;
+        margin-bottom: 20px;
+    }
+    #c2{
+        margin-bottom: 50px;
+    }
+
+    #phase{
+        width: 200%;
+        border: 1px solid;
+    }
+
+    #essential{
+        display:none;
+    }
+    #top-section{
+        display: block;
+        width: 100%;
+    }
+    #top-section-right>#deals{
+        width: 200%;
+    }
+    #school-deals img{
+        width: 200%;
+        height: 500px;
+        
+    }
+    #school-deals>div{
+        top: 50%;
+        left: 20%;
+    }
+    #recommended{
+        padding-bottom:10px ;
+    }
+    #c2{
+        font-size: 35px;
+    }
+    #mid-section{
+        display: none;
+    }
+    #meme{
+        display: none;
+    }
+    #expert{
+        display: block;
+        width: 200%;
+        margin-left: 20px;
 
     }
-    #m3{
-        top:130%;
+    #service{
+        line-height: 30px;
     }
-} */
+    #services h2{
+        font-size: 20px;
+    }
+    #services p{
+        font-size: 14px;
+    }
+    #lower-section{
+        display: block;
+        width: 300%;
+    }
+    #lower-section>div>div{
+        display: flex;
+    }
+    .comp{
+        height: auto;
+    }
+    .maylike{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        margin-left: 10px;
+    }
+    .trending{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        margin-left: 10px;
+    
+    }
+    .trending>div{
+        width:80% ;
+    }
+    #features-1{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+    }
+    #credit-card>div{
+        line-height: 30px;
+    }
+    
+    #featured{
+        display: grid;
+        grid-template-columns:repeat(2,1fr);
+        gap: 20px;
+        margin-left: 10px;
+    }
+    }
+    
