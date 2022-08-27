@@ -155,7 +155,24 @@
         </div>
 
         <div id="display">
-            <h2 id="h2">Product <span id="leng"></span></h2>
+            <div style="display: flex;border-bottom: 2px solid #908989;justify-content: space-between;align-items: center;">
+                <div>
+                    <h2 id="h2">Product <span id="leng"></span></h2>
+                </div>
+                <div>
+                    <select id="select"onchange="sorthl()" style="padding:15px 10px;margin-right: 10px;">
+                        <option value="Sortlh"style="padding:15px 10px;" >Sort by Price(low to high)</option>
+                        <option value="Sorthl"style="padding:15px 10px;" >Sort  by Price(high to low)</option>
+                        <option value="Sortplh`"style="padding:15px 10px;">Sort by Popularity(low to high)</option>
+                        <option value="Sortphl"style="padding:15px 10px;">Sort by Popularity(high to low)</option>
+                        <option value="Sortrlh"style="padding:15px 10px;">Sort by rating(low to high)</option>
+                        <option value="Sortrhl"style="padding:15px 10px;">Sort by rating(high to low)</option>
+                    </select>
+                </div>
+                
+            </div>
+            
+   
             <div id="products_display"></div>
         </div>
     </div>
