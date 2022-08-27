@@ -149,5 +149,50 @@ function Addtocart(ele){
 // }
 // console.log(data)
 
+function sorthl(){
+    let value=document.querySelector('#select').value;
+    if(value=='Sorthl'){
+        let copydata=[...data]
+        copydata=copydata.sort((a,b)=>{
+            return b.price.current_price-a.price.current_price
+        })
+        Appenddata(copydata)
+    }
+    else if(value=='Sortlh'){
+        let copydata=[...data]
+        copydata=copydata.sort((a,b)=>{
+            return  a.price.current_price-b.price.current_price
+        })
+       Appenddata(copydata)
+    }
+    else if(value=='Sortplh'){
+        let copydata=[...data]
+        copydata=copydata.sort((a,b)=>{
+            return  a.reviews.total_reviews-b.reviews.total_reviews
+        })
+        Appenddata(copydata)
+    }
+    else if(value=='Sortphl'){
+        let copydata=[...data]
+        copydata=copydata.sort((a,b)=>{
+            return  b.reviews.total_reviews-a.reviews.total_reviews
+        })
+        Appenddata(copydata)
+    }
+    else if(value=='Sortrlh'){
+        let copydata=[...data]
+        copydata=copydata.sort((a,b)=>{
+            return  a.reviews.rating-b.reviews.rating
+        })
+        Appenddata(copydata)
+    }
+    else if(value=='Sortrhl'){
+        let copydata=[...data]
+        copydata=copydata.sort((a,b)=>{
+            return  b.reviews.rating-a.reviews.rating
+        })
+        Appenddata(copydata)
+    }
+}
 
 
