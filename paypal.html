@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PhonePe Payment Gateway</title>
+    <style>
+         body {  
+       display: flex;  
+       align-items: center;  
+       justify-content: center;  
+       flex-direction: column;  
+       margin: 0px;
+ }  
+ #nav{
+    width: 100%;
+    padding-top: 10px;
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 2px 8px;
+    background-color: #ffffff;
+    padding-bottom: 10px;
+    padding-left: 30px;
+ }
+ #nav>img{
+    width:10%;
+ }
+  .digit-group input {  
+       width: 60px;  
+       height: 60px;  
+       border: none;  
+       line-height: 50px;  
+       text-align: center;  
+       background-color: #ccc;
+       font-size: 24px;  
+       font-family: 'Raleway', sans-serif;  
+       font-weight: 200;  
+       color: white;  
+       margin: 0 2px;  
+ }  
+  .digit-group .splitter {  
+       padding: 0 5px;  
+       color: white;  
+       font-size: 24px;  
+ }  
+ #box{
+    text-align: center;
+    margin-top: 100px;
+    padding-top: 50px;
+ }
+ #box>h2{
+    font-size:30px;
+    font-family: 'Raleway', sans-serif;  
+    color: cadetblue;
+ }
+ button{
+             padding: 6px 10px;
+            margin-top: 18px;
+            background: #ddd;
+            font-size: 20px;
+            border: none;
+            cursor: pointer;
+            }
+
+        button:active {
+        background: rgb(159, 41, 41);
+        color: #ddd;
+        }    
+    </style>
+
+</head>
+<body>
+    <div id="nav">
+        <img src="https://tse2.mm.bing.net/th?id=OIP.jSYQDnQnweCFDAkKmhK74wHaFj&pid=Api&P=0">
+    </div>
+    <div id="box">
+        <form method="get" class="digit-group"  data-autosubmit="false" autocomplete="off">  
+            <input type="text" id="digit-1" />  
+            <input type="text" id="digit-2" />  
+            <input type="text" id="digit-3" />  
+            <input type="text" id="digit-4" />  
+           </form> 
+           <button onclick="MakePayment()">Enter</button>
+           <h2>Fill the Otp for Making Payment and Click on Enter to Proceed</h2>
+    </div>
+    <div>
+        <!-- <img src="https://thumbs.gfycat.com/AcclaimedPositiveGull-size_restricted.gif" id="img"> -->
+    </div>
+</body>
+</html>
+<script>
+    // OTP is 1234
+    let img=document.querySelector("#img")
+
+
+    function MakePayment(){
+
+        let a=document.querySelector("#digit-1").value;
+        let b=document.querySelector("#digit-2").value;
+        let c=document.querySelector("#digit-3").value;
+        let d=document.querySelector("#digit-4").value;
+
+        document.querySelector("#box").innerHTML=""
+
+        let img=document.createElement('img')
+        img.setAttribute('id','image')
+        img.setAttribute('src','https://cdn.dribbble.com/users/447957/screenshots/6899626/payment-animation.gif')
+        document.querySelector("#box").append(img)
+
+        function getData() {
+
+    if(a=="1"&&b=="2"&&c=="3"&&d=="4"){
+        document.querySelector("#box").innerHTML=""
+        let img=document.createElement('img')
+        img.setAttribute('id','image')
+        img.setAttribute('src','https://cdn.dribbble.com/users/447957/screenshots/6899626/payment-animation.gif')
+        document.querySelector("#box").append(img)
+        return true;
+    }else if(a==""||b==""||c==""||d==""){
+        let p=document.createElement('p')
+        p.style.fontSize="20px"
+        p.style.color="red"
+        p.innerText="Please, Fill the credentials"
+        document.querySelector("#box").append(p)
+        return false;
+    }
+    else{
+        document.querySelector("#box").innerHTML=""
+        let img=document.createElement('img')
+        img.setAttribute('id','image')
+        img.setAttribute('src','https://cdn.dribbble.com/users/447957/screenshots/6899626/payment-animation.gif')
+        document.querySelector("#box").append(img)
+        return false
+    }
+}
+let myPromise =new Promise(function(resolve,reject){
+let data=false //initially we don't have data
+
+setTimeout(function(){
+    data=getData()
+if(data){
+    resolve("sweets")
+}
+else{
+    reject('chappal')
+}
+},3000)
+})
+/// if you want to handle a success value
+myPromise.then(function(res){
+console.log(res)
+document.querySelector("#image").src= "https://cdn.dribbble.com/users/1751799/screenshots/5512482/check02.gif"
+document.querySelector("#image").style.width="50%"
+let p=document.createElement('p')
+        p.style.fontSize="20px"
+        p.style.color="green"
+        p.innerText="Payment Successful"
+        document.querySelector("#box").append(p)
+})
+
+//  if you want to handle a reject/error value
+myPromise.catch(function(err){
+console.log(err);
+document.querySelector("#image").src="https://www.taxi2cardiff.com/images/error.gif"
+document.querySelector("#image").style.width="50%"
+let p=document.createElement('p')
+        p.style.fontSize="20px"
+        p.style.color="red"
+        p.innerText="Payment Failed"
+        document.querySelector("#box").append(p)
+})
+
+    }
+   
+</script>
