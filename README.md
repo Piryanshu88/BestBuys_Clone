@@ -8,7 +8,18 @@ BestBuy.com is an e-commerce web application that widely provides Tech-Gadgets a
 
 
 ## Tech Stack
-
 - HTML5
 - CSS3
 - JavaScript
+
+
+<h2>Features :</h2><br>
+  <li>Homepage - The landing Page</li>
+  <li>Login/Signup Page with User Authentication</li>
+  <li>Product Page to browse all products based on search with sorting and filter functionalities</li>
+  <li>Checkout Page</li>
+  <li>Payment Page</li>
+  <li>Every link on Nav bar is working<li>
+  <hr><br>
+  
+   
