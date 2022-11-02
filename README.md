@@ -1,4 +1,4 @@
-# BestBuys_Clone
+<h1 align='center'> BestBuys Clone </h1>
 This is Collabrated project and accociated with Masai Shcool. 
 Our main objective is to complete all main functionality of this e-commerce web application, such as User Authentication, Add to Cart/ Buy and filter the products.
 
