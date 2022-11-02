@@ -19,7 +19,7 @@ BestBuy.com is an e-commerce web application that widely provides Tech-Gadgets a
   <li>Product Page to browse all products based on search with sorting and filter functionalities</li>
   <li>Checkout Page</li>
   <li>Payment Page</li>
-  <li>Every link on Nav bar is working<li>
+  <li>Every link on Nav bar is working</li>
   <hr><br>
   
    
