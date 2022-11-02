@@ -1,6 +1,6 @@
 # BestBuys Clone
 
-This is Collabrated project and accociated with Masai Shcool.
+This is Collabrated project and accociated with Masai Shcool. 
 Our main objective is to complete all main functionality of this e-commerce web application, such as User Authentication, Add to Cart/ Buy and filter the products.
 
 - [Click here](https://coruscating-zabaione-3c9f3a.netlify.app/) to see preview of our project.
@@ -23,7 +23,7 @@ BestBuy.com is an e-commerce web application that widely provides Tech-Gadgets a
   <hr><br>
 
    <h2>Homepage</h2>
- <img src="ReadmeImages\BestBuysHomePage.png" alt="Bestbuy ScreenShot currently unavailable"/>
+ <img src="ReadmeImages\BestBuyHomePage.png" alt="Bestbuy ScreenShot currently unavailable"/>
   <hr/>
   <h2>Sign-Up Page</h2>
   <img src="ReadmeImages\BestBuySignIn.png" alt="Bestbuy ScreenShot currently unavailable"/>
